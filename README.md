@@ -48,7 +48,7 @@ Phân khúc khách hàng dựa trên các chỉ số:
 - Monetary Value/Revenue: Hành vi mua vé của khách hàng dựa trên doanh thu họ tạo ra.
 
 Trong [mô hình RFM của Movio](https://vistagroup.co.nz/blog/rfm-the-triple-threat-designed-to-increase-high-value-moviegoers), người xem phim được phân loại theo lần xem gần đây, tần suất và mức chi tiêu trung bình của họ. Sau đó, chúng được phân đoạn theo việc chúng nằm trên hay dưới giá trị trung bình cho mỗi thuộc tính, theo bảng sau:
-![Bảng phân nhóm khách hàng theo chỉ số RFM](./650931df94ebf3cb896011d3_RFM-TRIPLE-THREAT.png)
+![Bảng phân nhóm khách hàng theo chỉ số RFM](./img/650931df94ebf3cb896011d3_RFM-TRIPLE-THREAT.png)
 
 Các mức trung bình được chọn cho mô hình này nhằm cung cấp số liệu ổn định, không biến động mà nhờ đó chúng em có thể nắm bắt được sự phát triển hành vi của khách hàng trên tất cả các phân khúc. Các mức trung vị cũng đảm bảo sự phân bổ đồng đều lượng người xem phim trên tất cả tám phân khúc, mỗi phân khúc nắm bắt đặc điểm và hành vi của người xem phim một cách độc đáo.
 
