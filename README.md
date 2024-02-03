@@ -3,7 +3,7 @@ Dựa trên tập dữ liệu của cuộc thi Data Got Talent 2023, chúng em t
 ## Nội dung
 * [Giới thiệu](#gioithieu)
 * [Thư viện và Api sử dụng](#thuvienvaapi)
-* [Mô tả các bước thực hiện](#Các bước thực hiện)
+* [Mô tả các bước thực hiện](#motacacbuocthuchien)
 ## Giới thiệu
 Thông tin của bộ dữ liệu được nhận bao gồm 1 file excel trong đó có 3 sheet chứa dữ liệu và 1 sheet mô tả bộ dữ liệu.
 - Bảng dữ liệu customer chứa thông tin của khách hàng, bao gồm 4479 khách hàng và 7 trường thông tin
@@ -15,8 +15,8 @@ Chúng em sử dụng các thư viện như là:
 * pandas version: 2.0.3, là thư viện phổ biến dùng để thao tác trên các dữ liệu dạng bảng.
 * themoviedb version: 0.4.0, là thư viện dùng thao tác với api [TMDB](https://developer.themoviedb.org/docs/wrappers-and-libraries).
 * thefuzz version: 0.22.1, là thư viện dùng để so sách độ tương đồng dữ các chuỗi kí tự.
-* imdby version: 0.1.5, cũng là một thư viện chưa dữ liệu về phim
-* numpy version: 1.24.3, là một dùng để xử lý dữ liệu list
+* imdby version: 0.1.5, cũng là một thư viện chứa dữ liệu về phim
+* numpy version: 1.24.3, là một dùng để xử lý dữ liệu list, array
 * seaborn version: 0.12.2, sử dụng để vẽ biểu đồ
 * matplotlib version: 3.7.2, sử dụng để vẽ biểu đồ
 * googletrans version: 3.1.0a0, sử dụng để dịch
@@ -50,7 +50,8 @@ Phân khúc khách hàng dựa trên các chỉ số:
 Trong [mô hình RFM của Movio](https://vistagroup.co.nz/blog/rfm-the-triple-threat-designed-to-increase-high-value-moviegoers), người xem phim được phân loại theo lần xem gần đây, tần suất và mức chi tiêu trung bình của họ. Sau đó, chúng được phân đoạn theo việc chúng nằm trên hay dưới giá trị trung bình cho mỗi thuộc tính, theo bảng sau:
 ![Bảng phân nhóm khách hàng theo chỉ số RFM](./650931df94ebf3cb896011d3_RFM-TRIPLE-THREAT.png)
 
-Các mức trung bình được chọn cho mô hình này nhằm cung cấp số liệu ổn định, không biến động mà nhờ đó chúng tôi có thể nắm bắt được sự phát triển hành vi của thành viên trên tất cả các phân khúc. Các mức trung vị cũng đảm bảo sự phân bổ đồng đều lượng người xem phim trên tất cả tám phân khúc, mỗi phân khúc nắm bắt đặc điểm và hành vi của người xem phim một cách độc đáo.
+Các mức trung bình được chọn cho mô hình này nhằm cung cấp số liệu ổn định, không biến động mà nhờ đó chúng em có thể nắm bắt được sự phát triển hành vi của khách hàng trên tất cả các phân khúc. Các mức trung vị cũng đảm bảo sự phân bổ đồng đều lượng người xem phim trên tất cả tám phân khúc, mỗi phân khúc nắm bắt đặc điểm và hành vi của người xem phim một cách độc đáo.
+
 Cuối cùng là thông tin của từng nhóm khách hàng:
 1. Loyal moviegoers - Những người xem phim trung thành: những người đã đến rạp gần đây, thường xuyên ghé thăm và chi tiêu nhiều.
 2. At risk - Có nguy cơ: đây là những người xem phim thường xuyên đến rạp và chi tiêu rất nhiều nhưng gần đây chưa ghé thăm
