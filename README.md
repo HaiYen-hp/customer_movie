@@ -43,7 +43,7 @@ for title in ticket.title_clean.unique():
 ```
 ### Dữ liệu sau khi được tiền xử lý
 Bảng customer:
-**| Feature | Meaning |**
+| Feature | Meaning |
 | ------- | ------- |
 | customerid | Mã khách hàng |
 | DOB | Ngày sinh(đã được chuyển từ timestample về dạng datetime) |
@@ -57,7 +57,7 @@ Bảng customer:
 | Monetary | Tổng số tiền chi tiêu của khách hàng |
 | customer_segmentation | Nhóm khách hàng |
 Bảng ticket:
-**| Feature | Meaning |**
+| Feature | Meaning |
 | ------- | ------- |
 | orderid |mã bán hàng |
 | cashier | người bán |
@@ -77,7 +77,7 @@ Bảng ticket:
 | title_clean | tên phim đã loại bỏ các kí tự thừa |
 | show_id | Id phim |
 Bảng film:
-**| Feature | Meaning |**
+| Feature | Meaning |
 | ------- | ------- |
 | show_id | mã thông tin film |
 | title | tiêu đề film |
