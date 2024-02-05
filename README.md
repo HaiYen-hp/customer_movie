@@ -41,6 +41,62 @@ for title in ticket.title_clean.unique():
     else:
         print(title)
 ```
+### Dữ liệu sau khi được tiền xử lý
+Bảng customer:
+**| Feature | Meaning |**
+| ------- | ------- |
+| customerid | Mã khách hàng |
+| DOB | Ngày sinh(đã được chuyển từ timestample về dạng datetime) |
+| gender | Giới tính |
+| address | Địa chỉ |
+| Website | Dữ liệu web |
+| job | công việc |
+| industry | lĩnh vực |
+| Recency | Số ngày tính từ lần cuối khách hàng đi xem phim |
+| Frequency | Tần suất(số lần) khách hàng đi xem phim |
+| Monetary | Tổng số tiền chi tiêu của khách hàng |
+| customer_segmentation | Nhóm khách hàng |
+Bảng ticket:
+**| Feature | Meaning |**
+| ------- | ------- |
+| orderid |mã bán hàng |
+| cashier | người bán |
+| saledate | ngày bán |
+| total | tổng tiền |
+| customerid | Mã khách hàng |
+| ticketcode | mã vé |
+| date | ngày chiếu |
+| time | giờ chiếu |
+| slot | chỗ ngồi |
+| room | phòng chiếu |
+| film | tên phim |
+| slot type | loại chỗ |
+| ticket type | loại vé |
+| ticket price | đơn giá vé |
+| popcorn | bắp nước |
+| title_clean | tên phim đã loại bỏ các kí tự thừa |
+| show_id | Id phim |
+Bảng film:
+**| Feature | Meaning |**
+| ------- | ------- |
+| show_id | mã thông tin film |
+| title | tiêu đề film |
+| director | đạo diễn |
+| cast | diễn viên |
+| country | quốc gia |
+| release_year | release_year |
+| rating | đánh giá |
+| duration | thời lượng film |
+| genres | loại film(trải phẳng từ listed_in) |
+| description | mô tả ngắn |
+| original_title | Tên phim gốc |
+| production_companies | Công ty sản xuất |
+| release_date | Ngày phát hành |
+| poster_path | Link ảnh bìa bộ phim |
+| revenue | Tổng doanh thu bộ phim thu được trên toàn thế giới |
+| vote_average | Điểm trung bình đánh giá phim |
+| vote_count | Số người đánh giá phim |
+
 ### Phân khúc khách hàng RFM:
 Phân khúc khách hàng dựa trên các chỉ số:
 - Recency: Hành vi xem phim trên rạp chiếu phim của khách hàng dựa trên ngày xem phim gần đây nhất của họ và số ngày họ không hoạt động kể từ lần xem cuối cùng.
