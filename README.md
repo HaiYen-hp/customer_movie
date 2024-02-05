@@ -56,6 +56,7 @@ Bảng customer:
 | Frequency | Tần suất(số lần) khách hàng đi xem phim |
 | Monetary | Tổng số tiền chi tiêu của khách hàng |
 | customer_segmentation | Nhóm khách hàng |
+
 Bảng ticket:
 | Feature | Meaning |
 | ------- | ------- |
@@ -76,6 +77,7 @@ Bảng ticket:
 | popcorn | bắp nước |
 | title_clean | tên phim đã loại bỏ các kí tự thừa |
 | show_id | Id phim |
+
 Bảng film:
 | Feature | Meaning |
 | ------- | ------- |
